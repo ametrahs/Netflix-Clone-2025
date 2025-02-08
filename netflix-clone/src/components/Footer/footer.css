@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre Baskerville:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+.footer_outer_container{
+    background-color: #111;
+   
+    color:grey;
+     display:flex;
+     justify-content: center;
+}
+.footer_inner_container{
+    width: 60%;
+    
+     
+}
+.footer_icons{
+     /* background-color: blue; */
+    display: flex;
+     
+   
+    
+    /* */
+    margin-left: 10px;
+    color: #fff;
+} 
+.insta{
+    margin-inline: 35px;
+}
+.footer_data{
+     display: flex;
+    justify-content: space-between;
+    font-family: "Libre Baskerville";
+  
+}
+.footer_data ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 12vh;
+    line-height: 20px;
+    font-size: 0.8rem;
+    /* background-color: pink;  */
+}
+.footer_data ul li{
+    cursor: pointer;
+}
+.service_code{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    width: 15%;
+   
+    margin: 20px 0;
+    font-size: 0.78rem;
+   
+    cursor: pointer; 
+    font-family: "Libre Baskerville";
+
+}
+.copy-write{
+font-size: 0.8rem;
+margin-bottom: 10px;
+font-family: "Barlow", serif;
+}
