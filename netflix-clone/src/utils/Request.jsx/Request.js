@@ -12,10 +12,3 @@ const requests = {
 };
 export default requests;
 
-// https://api.themoviedb.org/3/discover/movie?api_key=7c72676ea0ac1ff0c6873274ffa41410&with_genres=10749
-// https://image.tmdb.org/t/p/original/xDGbZ0JJ3mYaGKy4Nzd9Kph6M9L.jpg
-// "poster_path": "/xDGbZ0JJ3mYaGKy4Nzd9Kph6M9L.jpg",
-
-// https://api.themoviedb.org/3/trending/all/week?api_key=7c72676ea0ac1ff0c6873274ffa41410&language=en-US
-// 
-// https://image.tmdb.org/t/p/original//rn8Sg6C8aWKRWdqY4hIpmOaiuqS.jpg
