@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YoutubeIcon from "@mui/icons-material/YouTube";
-import "./footer.css"
+import "./footer.css";
 function Footer() {
   return (
     <>
@@ -10,7 +10,7 @@ function Footer() {
         <div className="footer_inner_container">
           <div className="footer_icons">
             <FacebookOutlinedIcon />
-            <span className='insta'>
+            <span className="insta">
               <InstagramIcon />{" "}
             </span>
             <YoutubeIcon />
@@ -48,4 +48,4 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;
