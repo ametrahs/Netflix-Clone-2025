@@ -5,6 +5,7 @@ import requests from "../../utils/Request/Request";
 function Banner() {
   const [movie, setMovie] = useState({});
 
+
   useEffect(() => {
     (async () => {
       try {
@@ -16,7 +17,7 @@ function Banner() {
           ]
         );
       } catch (error) {
-        console.log("error", error);
+        console.log("Network error", error);
       }
     })();
   }, []);
@@ -31,7 +32,10 @@ function Banner() {
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")`,
+        backgroundImage: movie?.backdrop_path
+          ? `url("https://image.tmdb.org/t/p/original${movie.backdrop_path}")`
+          : "none",
+        // backgroundImage: `url("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
