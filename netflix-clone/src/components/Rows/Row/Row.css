@@ -27,8 +27,11 @@
 .row_posterLarge:hover{
     transform: scale(1.09);
 }
-.row{
+.row {
      font-family: "Libre Baskerville";
     margin-left: 20px;
     color: white;
+    /* border: 1px solid red; */
+    
 }
+

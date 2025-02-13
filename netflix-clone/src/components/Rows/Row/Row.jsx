@@ -3,6 +3,7 @@ import "./Row.css";
 import axios from "../../../utils/Axios/Axios";
 import movieTrailer from "movie-trailer";
 import YouTube from "react-youtube"
+import { containerClasses } from "@mui/material";
 function Row({ title, fetchUrl, isLargeRow }) {
   const [movies, setmovie] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState('')
@@ -48,25 +49,27 @@ function Row({ title, fetchUrl, isLargeRow }) {
     },
   };
   return (
-    <div className="row">
-      <h1>{title}</h1>
-      <div className="row_posters">
-        {movies?.map((movie, index) => (
-          <img
-             onClick={() => handleClick(movie)} 
-            key={index}
-            src={`${base_url}${
-              isLargeRow ? movie.poster_path : movie.backdrop_path
-            }`}
-            alt={movie.name}
-            className={`row_poster ${isLargeRow && "row_posterLarge"}`}
-          />
-        ))}
+    
+      <div className="row">
+        <h1 className="title">{title}</h1>
+        <div className="row_posters">
+          {movies?.map((movie, index) => (
+            <img
+              onClick={() => handleClick(movie)}
+              key={index}
+              src={`${base_url}${
+                isLargeRow ? movie.poster_path : movie.backdrop_path
+              }`}
+              alt={movie.name}
+              className={`row_poster ${isLargeRow && "row_posterLarge"}`}
+            />
+          ))}
+        </div>
+        <div style={{ padding: "40px" }}>
+          {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
+        </div>
       </div>
-      <div style={{ padding: "40px" }}>
-        {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
-      </div>
-    </div>
+    
   );
 }
 

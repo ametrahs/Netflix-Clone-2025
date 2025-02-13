@@ -2,10 +2,11 @@
 .banner {
   margin-top: 1vh;
   height: 80vh;
-  margin-bottom: -80px;
+  /* margin-bottom: -80px; */
   color: white;
   object-fit: contain;
   position: relative;
+  
   
 }
 .banner_contents {

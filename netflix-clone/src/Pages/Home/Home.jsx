@@ -8,8 +8,9 @@ function Home() {
   return (
     <>
       <Header />
-      <Banner /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-      <RowList /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+      <Banner /> 
+      
+      <RowList />
       <Footer />
     </>
   );
